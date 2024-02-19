@@ -93,9 +93,9 @@ const applyButton = document.getElementById("apply-button");
             const discountPrice = sum * 0.15 ;
             discountElement.innerText = discountPrice.toFixed(2);
             
-            const totalSum = sum - discountPrice;
+            const totalSum = convertTotalCost - discountPrice;
 
-            // hide the label
+            
             document.getElementById("grand-total").innerText = totalSum;
             document.getElementById("hide-element").style.display = 'none';
     }
@@ -105,9 +105,9 @@ const applyButton = document.getElementById("apply-button");
             const discountPrice = sum * 0.2 ;
             discountElement.innerText = discountPrice.toFixed(2);
             
-            const totalSum = sum - discountPrice;
+            const totalSum = convertTotalCost - discountPrice;
 
-            // hide the label
+            
             document.getElementById("grand-total").innerText = totalSum;
             document.getElementById("hide-element").style.display = 'none';
     }
