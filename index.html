@@ -11,7 +11,6 @@
 </head>
 
 <!-- modal -->
-<!-- Put this part before  tag -->
 <input type="checkbox" id="my_modal_7" class="modal-toggle" />
 <div class="modal" role="dialog">
   <div class="modal-box text-center gap-5">
@@ -52,7 +51,7 @@
                   </ul>
                 </div>
                 <div class="navbar-end">
-                    <button class="btn bg-[#e8fae5] border-2 border-lime-400 px-5">
+                    <button class="btn shadow-md shadow-green-600 bg-[#e8fae5] border-2 border-lime-400 px-5">
                         <a href="" class="text-[#1dd100] text-xl">Bus</a>
                         <img class="w-6 h-6 mt-1" src="images/bus-icon.png" alt="">
                       </button>
@@ -60,7 +59,7 @@
               </div>
         </nav>
     </header>
-    <main>
+    <main class="w-full">
         <!-- secttion-1 -->
         <section>
             <div class="hero min-h-screen rounded-3xl" style="background-image: url(images/banner.png); absolute">
@@ -69,7 +68,7 @@
                   <div class="">
                     <h1 class="mb-10 text-5xl font-extrabold font-raleway">End-to-End Travel with <br> <span class="text-[#1dd100]">P Paribahan</span></h1>
                     <p class="mb-10 font-raleway">Travelling is an amazing way to learn a lot of things in life. A lot of <br> people around the world travel every year to many places.</p>
-                    <a href="#poribohon"><button class="btn bg-[#1dd100] text-[#030712] font-ralewaytext-lg border-none">Bus Ticket</button></a>
+                    <a href="#poribohon"><button class="btn shadow-sm shadow-green-600 bg-[#1dd100] text-[#030712] font-ralewaytext-lg border-none">Bus Ticket</button></a>
                   </div>
                 </div>
               </div>
@@ -175,7 +174,7 @@
                                 </div>
                             </div>
                             <div class="mt-10">
-                                <button class="btn bg-[#e8fae5] border-2 border-lime-400 px-5">
+                                <button class="btn shadow-sm shadow-gray-500 bg-[#e8fae5] border-2 border-lime-400 px-5">
                                     <img class="w-6 h-6 mt-1" src="images/seat-green.png" alt="">
                                     <a href="" class="text-[#1dd100] text-xl"><span id="seat-count">16</span> Seats left</a>
                                 </button>
@@ -190,9 +189,9 @@
                             <h1>9:00 PM</h1>
                         </div>
                         <div class="mt-10 ml-20">
-                            <button class="btn px-8 mr-14 bg-[#cdcfd6] ">Boarding Point - Laxmipur</button>
-                            <button class="btn mr-14 px-8 bg-[#cdcfd6] ">Dropping Point - Bogura</button>
-                            <button class="btn px-10 bg-[#cdcfd6] ">Est. Time - 11 Hour</button>
+                            <button class="btn border-none shadow-sm shadow-slate-500 px-8 mr-14 bg-[#cdcfd6] ">Boarding Point - Laxmipur</button>
+                            <button class="btn border-none shadow-sm shadow-slate-500 mr-14 px-8 bg-[#cdcfd6] ">Dropping Point - Bogura</button>
+                            <button class="btn border-none shadow-sm shadow-slate-500 px-10 bg-[#cdcfd6] ">Est. Time - 11 Hour</button>
                         </div>
                     </div> 
                     <div class="mt-5">
@@ -229,7 +228,7 @@
                         </div>
                     </div>
                     <div class="mt-10 text-end">
-                        <button class="btn px-6 bg-[#cdcfd6] "><img src="images/table.png" alt=""></button>
+                        <button class="btn px-6 border-none shadow-sm shadow-slate-500 bg-[#cdcfd6] "><img src="images/table.png" alt=""></button>
                     </div>
                     <div class="mt-10">
                         <div class="flex gap-24 mb-7">
@@ -270,7 +269,7 @@
                     <div class="border-b-2 border-dashed border-[#afb1b8] pb-10">
                         <h1 class="text-xl font-raleway font-semibold ">Select Your Seat</h1> 
                     </div>
-                    <div class="mt-10 w-11/12 bg-[#dbdcdf] p-8 ml-4 rounded-xl">
+                    <div class="mt-10 w-11/12 bg-[#dbdcdf] shadow-sm shadow-slate-500 p-8 ml-4 rounded-xl">
                         <div class="flex gap-28 border-b-2 border-dashed pb-4 border-[#afb1b8]">
                             <h1 class="flex gap-2">Seat <span id="seat-select" class="bg-[#1bd100] px-1  rounded-lg  text-[#ffffff]">0</span></h1>
                             <h1>Class</h1>
@@ -290,15 +289,15 @@
                         </div>
                     </div>
                     <div id="hide-element" class="ml-4 mt-8">
-                        <input autocomplete="off" id="input-element" class="w-8/12 p-3 rounded-lg border-2 border-gray-200" type="text" placeholder="Have any cupon?">
-                        <button disabled id="apply-button" class="btn bg-[#1dd100] text-[#fff] border-none px-10">Apply</button>
+                        <input autocomplete="off" id="input-element" class="w-8/12 p-3 shadow-sm shadow-slate-500 rounded-lg border-2 border-gray-200" type="text" placeholder="Have any cupon?">
+                        <button disabled id="apply-button" class="btn bg-[#1dd100] shadow-sm shadow-slate-500 text-[#fff] border-none px-10">Apply</button>
                     </div>
                     <div class="flex justify-between mt-5 w-11/12 ml-6">
                         <h1>Grand Total</h1>
                         <h1>BDT = <span id="grand-total">0</span></h1>
                     </div>
                     <div>
-                        <label for="my_modal_7" class="btn w-11/12 text-[#fff] bg-[#1dd100] ml-5 mt-10 font-raleway text-lg">Next</label>
+                        <label for="my_modal_7" class="btn w-11/12 text-[#fff] shadow-md shadow-gray-500 border-none bg-[#1dd100] ml-5 mt-10 font-raleway text-lg">Next</label>
                     </div>
                 </div>
             </div>
