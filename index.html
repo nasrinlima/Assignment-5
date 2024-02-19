@@ -7,13 +7,24 @@
     <link rel="shortcut icon" href="images/bus-logo.png" type="image/x-icon">
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700;800&display=swap" rel="stylesheet">
-    <style>
-        .font-family{
-            font-family:"Raleway";
-        }
-    </style>
+    <link rel="stylesheet" href="style/style.css">
 </head>
+
+<!-- modal -->
+<!-- Put this part before  tag -->
+<input type="checkbox" id="my_modal_7" class="modal-toggle" />
+<div class="modal" role="dialog">
+  <div class="modal-box text-center gap-5">
+    <img class="mx-auto mb-5" src="images/success.png" alt="">
+    <h3 class="text-lg font-bold text-[#1bd100]">SUCCESS</h3>
+    <p class="py-2 text-md px-10">Thank you for Booking Our Bus Seats. 
+        We are working hard to find the best service and deals for you.</p>
+    <p class="text-sm">Shortly you will find a confirmation in your email.</p> 
+    <button class="btn bg-[#27AE60] text-[#ffffff] px-14 rounded-3xl mt-5">Continue</button>   
+  </div>
+  <label class="modal-backdrop" for="my_modal_7">Close</label>
+</div>
+
 <body class="container w-96 lg:w-full mx-auto">
     <header>
         <nav>
@@ -30,10 +41,10 @@
                         <li><a>Search</a></li>
                     </ul>
                   </div>
-                  <a class="lg:text-4xl text-2xl font-extrabold font-family">P-Ticket</a>
+                  <a class="lg:text-4xl text-2xl font-extrabold font-raleway">P-Ticket</a>
                 </div>
                 <div class="navbar-center hidden lg:flex">
-                  <ul class="menu menu-horizontal px-1 text-lg font-family">
+                  <ul class="menu menu-horizontal px-1 text-lg font-raleway">
                     <li class="text-[#1dd100]"><a>Home</a></li>
                     <li><a>About</a></li>
                     <li><a>Destination</a></li>
@@ -56,9 +67,9 @@
                 <div class="hero-overlay bg-opacity-40 rounded-3xl"></div>
                 <div class="hero-content text-center text-neutral-content">
                   <div class="">
-                    <h1 class="mb-10 text-5xl font-extrabold font-family">End-to-End Travel with <br> <span class="text-[#1dd100]">P Paribahan</span></h1>
-                    <p class="mb-10 font-family">Travelling is an amazing way to learn a lot of things in life. A lot of <br> people around the world travel every year to many places.</p>
-                    <a href="#poribohon"><button class="btn bg-[#1dd100] text-[#030712] font-family text-lg border-none">Bus Ticket</button></a>
+                    <h1 class="mb-10 text-5xl font-extrabold font-raleway">End-to-End Travel with <br> <span class="text-[#1dd100]">P Paribahan</span></h1>
+                    <p class="mb-10 font-raleway">Travelling is an amazing way to learn a lot of things in life. A lot of <br> people around the world travel every year to many places.</p>
+                    <a href="#poribohon"><button class="btn bg-[#1dd100] text-[#030712] font-ralewaytext-lg border-none">Bus Ticket</button></a>
                   </div>
                 </div>
               </div>
@@ -67,7 +78,7 @@
                 <div class="card card-side bg-base-100 shadow-xl border-b-2 border-[#1dd100] w-72">
                     <figure class="ml-10"><img src="images/people.png" alt="Movie"/></figure>
                     <div class="card-body">
-                      <h2 class="card-title font-bold">500K+</h2>
+                      <h2 class="card-title font-bold text-2xl">500K+</h2>
                       <p>Registered users</p>
                     </div>
                 </div>
@@ -75,7 +86,7 @@
                   <div class="card card-side bg-base-100 shadow-xl border-b-2 border-[#1dd100] w-72">
                     <figure class="ml-10"><img src="images/ticket-cupon.png" alt="Movie"/></figure>
                     <div class="card-body">
-                      <h2 class="card-title font-bold">1.7 lacks</h2>
+                      <h2 class="card-title font-bold text-2xl">1.7 lacks</h2>
                       <p>Tickets sold</p>
                     </div>
                   </div>
@@ -83,7 +94,7 @@
                   <div class="card card-side bg-base-100 shadow-xl border-b-2 border-[#1dd100] w-72">
                     <figure class="ml-10"><img src="images/stoppage.png" alt="Movie"/></figure>
                     <div class="card-body">
-                      <h2 class="card-title font-bold">80K+</h2>
+                      <h2 class="card-title font-bold text-2xl">80K+</h2>
                       <p>Rental partners</p>
                     </div>
                   </div>
@@ -92,7 +103,7 @@
         <!-- section area 2 -->
         <section class="mb-28">
             <div class="mb-16 mt-14">
-                <h1 class="text-center font-family font-bold text-4xl justify-center">Best offers for you</h1>
+                <h1 class="text-center font-raleway font-bold text-4xl justify-center">Best offers for you</h1>
             </div>
             <div class="grid grid-cols-2 gap-8">
                 <!-- 1st cupon -->
@@ -109,7 +120,7 @@
                         </div>
                         <div class="card card-side">
                             <div class="card-body pt-20 pl-16">
-                                <h2 class="card-title text-3xl font-extrabold font-family">NEW15</h2>
+                                <h2 class="card-title text-3xl font-extrabold font-raleway">NEW15</h2>
                                 <p class="text-[#72706c] text-lg">Coupon Code</p>
                             </div>
                         </div>
@@ -135,7 +146,7 @@
                         </div>
                         <div class="card card-side">
                             <div class="card-body pt-20 pl-4">
-                                <h2 class="card-title text-3xl font-extrabold font-family">Couple 20</h2>
+                                <h2 class="card-title text-3xl font-extrabold font-raleway">Couple 20</h2>
                                 <p class="text-[#72706c] text-lg">Coupon Code</p>
                             </div>
                         </div>
@@ -143,13 +154,13 @@
                 </div>
             </div>
             <div class="text-center">
-                <button class="btn bg-[#e8fae5] text-center text-[#1dd100] font-family px-6 text-md mt-20 border-[#1dd100]">See All Offers</button>
+                <button class="btn bg-[#e8fae5] text-center text-[#1dd100] font-raleway px-6 text-md mt-20 border-[#1dd100]">See All Offers</button>
             </div>
         </section>
         <!-- section area 3 -->
         <section id="poribohon" class="border-t-2 border-[#1dd100] rounded-2xl shadow-xl">
             <div class="text-center">
-                <h1 class="font-family font-bold text-3xl justify-center pt-14">P Paribahan</h1>
+                <h1 class="font-raleway font-bold text-3xl justify-center pt-14">P Paribahan</h1>
                 <p class="px-64 mt-10">Some travel to learn more while some travel to take a break from their life. No matter the reason, travelling opens a big door for us to explore the world beyond our imagination and indulge in many things.</p>
             </div>
             <div>
@@ -166,7 +177,7 @@
                             <div class="mt-10">
                                 <button class="btn bg-[#e8fae5] border-2 border-lime-400 px-5">
                                     <img class="w-6 h-6 mt-1" src="images/seat-green.png" alt="">
-                                    <a href="" class="text-[#1dd100] text-xl"><span id="seat-count">40</span> Seats left</a>
+                                    <a href="" class="text-[#1dd100] text-xl"><span id="seat-count">16</span> Seats left</a>
                                 </button>
                             </div>
                         </div>
@@ -201,7 +212,7 @@
                 <!-- 1 -->
                 <div class="w-3/5">
                     <div class="border-b-2 border-dashed border-[#afb1b8] pb-10">
-                        <h1 class="text-xl font-family font-semibold ">Select Your Seat</h1> 
+                        <h1 class="text-xl font-raleway font-semibold ">Select Your Seat</h1> 
                     </div>
                     <div class="flex justify-between border-b-2 border-dashed border-[#afb1b8] pb-8 pt-8">
                         <div>
@@ -257,32 +268,37 @@
                 <!-- 2 -->
                 <div class="w-2/5 border-l-2 border-dashed border-[#afb1b8] pl-7">
                     <div class="border-b-2 border-dashed border-[#afb1b8] pb-10">
-                        <h1 class="text-xl font-family font-semibold ">Select Your Seat</h1> 
+                        <h1 class="text-xl font-raleway font-semibold ">Select Your Seat</h1> 
                     </div>
                     <div class="mt-10 w-11/12 bg-[#dbdcdf] p-8 ml-4 rounded-xl">
                         <div class="flex gap-28 border-b-2 border-dashed pb-4 border-[#afb1b8]">
-                            <h1 class="flex gap-2">Seat <span id="seat-select" class="bg-[#1bd100] px-2 rounded-lg text-sm text-[#ffffff]">0</span></h1>
+                            <h1 class="flex gap-2">Seat <span id="seat-select" class="bg-[#1bd100] px-1  rounded-lg  text-[#ffffff]">0</span></h1>
                             <h1>Class</h1>
                             <h1>Price</h1>
                         </div>
-                        <div class="mt-10 border-b-2 pb-4 border-[#202122]">
-        
-                        </div>
-                        <div class="flex justify-between">
+                        <table id="selected-ticket" class="mt-4">
+
+                        </table>
+    
+                        <div id="total-price" class="flex justify-between border-t-2 border-[#000000] mt-4">
                             <h1>Total Price</h1>
-                            <h1>BDT = 000</h1>
+                            <h1>BDT = <span id="total-cost">0</span></h1>
+                        </div>
+                        <div class="flex justify-between mt-4">
+                            <h1>Discount Price</h1>
+                            <h1>BDT = <span id="discount-cost">0</span></h1>
                         </div>
                     </div>
-                    <div class="ml-4 mt-8">
-                        <input class="w-8/12 p-3 rounded-lg" type="text" placeholder="Have any copupon?">
-                        <button class="btn bg-[#1dd100] border-none px-10">Apply</button>
+                    <div id="hide-element" class="ml-4 mt-8">
+                        <input autocomplete="off" id="input-element" class="w-8/12 p-3 rounded-lg border-2 border-gray-200" type="text" placeholder="Have any cupon?">
+                        <button disabled id="apply-button" class="btn bg-[#1dd100] text-[#fff] border-none px-10">Apply</button>
                     </div>
                     <div class="flex justify-between mt-5 w-11/12 ml-6">
                         <h1>Grand Total</h1>
-                        <h1>BDT = 000</h1>
+                        <h1>BDT = <span id="grand-total">0</span></h1>
                     </div>
                     <div>
-                        <button class="btn w-11/12 bg-[#1dd100] ml-5 mt-10 font-family text-lg">Next</button>
+                        <label for="my_modal_7" class="btn w-11/12 text-[#fff] bg-[#1dd100] ml-5 mt-10 font-raleway text-lg">Next</label>
                     </div>
                 </div>
             </div>
@@ -291,15 +307,15 @@
     <footer class="bg-black w-full mt-20">
         <div class="footer pt-14 px-24 justify-between ">
             <aside>
-                <h1 class="text-2xl text-[#ffffff] font-family font-bold">P-Ticket</h1>
+                <h1 class="text-2xl text-[#ffffff] font-raleway font-bold">P-Ticket</h1>
                 <p class="text-[#f4f4f7]">P-Ticket is a digital platform to make your <br> daily commuting better.</p>
               </aside> 
               <nav>
-                <h6 class="text-[#f8f8f8] text-xl font-family font-bold">Download our app</h6> 
+                <h6 class="text-[#f8f8f8] text-xl font-raleway font-bold">Download our app</h6> 
                 <div class="">
                   <button class="btn bg-[#181a18] border-2 border-gray-200 px-5">
                       <img class="w-6 h-6 mt-1" src="images/playstore.png" alt="">
-                      <a href="" class="text-[#f0f3f0] font-family text-lg">Google Play</a>
+                      <a href="" class="text-[#f0f3f0] font-raleway text-lg">Google Play</a>
                   </button> 
                 </div>
               </nav>
